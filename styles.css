@@ -46,7 +46,7 @@ body {
   align-items: center;
   gap: 12px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #ffffff;
 }
 
@@ -55,6 +55,7 @@ body {
   font-size: 1.4rem;
 }
 
+/* Botón Hamburguesa (Oculto en pantallas grandes) */
 .menu-toggle {
   display: none;
   background: none;
@@ -406,14 +407,14 @@ footer {
   border-radius: 4px;
 }
 
-/* Adaptabilidad para Teléfonos (Menú Desplegable Hamburguesa) */
+/* Adaptabilidad para Teléfonos (Menú Hamburguesa Oculto y Desplegable) */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block !important; /* Muestra el botón de tres líneas en móviles */
+    display: block !important;
   }
 
   .nav-links {
-    display: none !important; /* Oculta los enlaces por defecto en celulares */
+    display: none !important;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -426,7 +427,6 @@ footer {
     text-align: center;
   }
 
-  /* Clase que activa el menú desplegable al hacer clic */
   .nav-links.active {
     display: flex !important;
   }

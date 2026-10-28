@@ -17,19 +17,18 @@
 </head>
 <body>
 
-  <!-- Encabezado / Navbar con Menú Desplegable -->
+  <!-- Encabezado / Navbar -->
   <header class="navbar">
     <div class="logo">
       <i class="fa-solid fa-seedling"></i>
       <span>Tesis Vivero — Jardín Secreto</span>
     </div>
 
-    <!-- Botón de Hamburguesa para Teléfonos -->
+    <!-- Botón de hamburguesa para móviles (Faltaba esto en tu HTML actual) -->
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <!-- Enlaces de Navegación -->
     <nav class="nav-links" id="navLinks">
       <a href="#nuestro-equipo" class="nav-item">Nuestro equipo</a>
       <a href="#sistema" class="nav-item">El Sistema</a>
@@ -49,7 +48,7 @@
             Somos un grupo de estudiantes del <strong>Instituto Superior A. U. Illia</strong> que desarrolló esta tesis con el objetivo de aportar una solución tecnológica integral para la gestión y optimización del vivero <strong>Jardín Secreto</strong>.
           </p>
           
-          <!-- Mención cariñosa a la profesora Agustina Aperlo con su link de GitHub -->
+          <!-- Mención a la profesora Agustina Aperlo -->
           <div class="prof-box">
             <i class="fa-solid fa-heart" style="color: var(--color-terracotta);"></i> 
             Un agradecimiento especial a nuestra querida profe 
@@ -116,10 +115,10 @@
               <img src="img/santy.jpeg" alt="Santiago Soria" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'" />
             </div>
             <h3>Santiago Soria</h3>
-            <span class="role">Desarrollo e Integración</span>
-            <p>Encargado del desarrollo del sistema, integración de funcionalidades y diseño de la solución.</p>
+            <span class="role">Desarrollador</span>
+            <p>Encargado del ABM de la pestaña "Clientes" y de la Base de Datos.</p>
             <div class="tech-badges">
-              <span>C# / .NET</span>
+              <span>SQL</span>
               <span>Java</span>
             </div>
             <div class="social-links">
@@ -134,11 +133,10 @@
               <img src="img/maca.jpeg" alt="Macarena Bazán" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80'" />
             </div>
             <h3>Macarena Bazán</h3>
-            <span class="role">Desarrollo y Gestión</span>
-            <p>Colaboración en el desarrollo del sistema, análisis de requerimientos y lógica de la aplicación.</p>
+            <span class="role">Desarrolladora</span>
+            <p>Encargado del ABM de la pestaña "Historial de Ventas".</p>
             <div class="tech-badges">
-              <span>Software</span>
-              <span>Análisis</span>
+              <span>Java</span>
             </div>
             <div class="social-links">
               <a href="https://github.com/maquitabazan-bit" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
@@ -152,11 +150,11 @@
               <img src="img/jony.jpeg" alt="Jonathan Portela" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80'" />
             </div>
             <h3>Jonathan Portela</h3>
-            <span class="role">Backend / Lógica</span>
-            <p>Participación en el diseño de la arquitectura del sistema y estructuración de componentes.</p>
+            <span class="role">Desarrollador</span>
+            <p>Encargado del ABM de la pestaña "Productos" y de la Base de Datos.</p>
             <div class="tech-badges">
-              <span>Backend</span>
-              <span>Base de Datos</span>
+              <span>Java</span>
+              <span>SQL</span>
             </div>
             <div class="social-links">
               <a href="https://github.com/JonathanPortela" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
@@ -170,10 +168,10 @@
               <img src="img/nay.jpeg" alt="Nahir Campos" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80'" />
             </div>
             <h3>Nahir Campos</h3>
-            <span class="role">Documentación y QA</span>
-            <p>Co-autoría en especificaciones técnicas, control de calidad y documentación del proyecto.</p>
+            <span class="role">Desarrolladora</span>
+            <p>Encargado del ABM de la pestaña "Categorias" y realizar el QA.</p>
             <div class="tech-badges">
-              <span>Documentación</span>
+              <span>Java</span>
               <span>QA</span>
             </div>
             <div class="social-links">
@@ -196,7 +194,7 @@
     </section>
   </main>
 
-  <!-- Footer institucional -->
+  <!-- Pie de página institucional -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2026 Tesis Vivero - Todos los derechos reservados.</p>
@@ -210,18 +208,16 @@
     </div>
   </footer>
 
-  <!-- Script para el funcionamiento del menú desplegable en celulares -->
+  <!-- Script para abrir/cerrar el menú en celulares -->
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
     const navItems = document.querySelectorAll('.nav-item');
 
-    // Abrir/Cerrar al hacer clic en el botón de hamburguesa
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
 
-    // Cerrar el menú automáticamente cuando se hace clic en cualquier enlace
     navItems.forEach(item => {
       item.addEventListener('click', () => {
         navLinks.classList.remove('active');
