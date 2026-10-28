@@ -1,0 +1,427 @@
+:root {
+  --color-primary: #2d4a3e;       
+  --color-terracotta: #e09f8c;    
+  --color-terracotta-light: #f7ece8; 
+  --color-bg-light: #ffffff;      
+  --color-text: #2c2c2c;
+  --color-muted: #666666;
+  /* Sombra refinada y más definida para resaltar sobre fondos blancos */
+  --card-shadow: 0 8px 24px rgba(45, 74, 62, 0.12);
+  --border-radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Encabezado / Navbar diferenciado de los apartados */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid var(--color-terracotta);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+
+.logo i {
+  color: var(--color-terracotta);
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-terracotta);
+}
+
+/* Sistema de Franjas */
+.section {
+  padding: 5rem 8%;
+  border-bottom: 1px solid rgba(224, 159, 140, 0.15);
+}
+
+.stripe-light {
+  background-color: var(--color-bg-light);
+}
+
+.stripe-accent {
+  background-color: var(--color-terracotta-light);
+}
+
+.stripe-dark {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Franja 1: Nuestro equipo / Conócenos */
+.content-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.text-side {
+  flex: 1;
+}
+
+.sub-tag {
+  color: var(--color-terracotta);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.text-side h1 {
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.text-side p {
+  font-size: 1.05rem;
+  color: var(--color-muted);
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-img {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+/* Caja de agradecimiento a la profe */
+.prof-box {
+  margin-top: 1.5rem;
+  background: var(--color-terracotta-light);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--color-terracotta);
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.prof-box a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Franja Beneficios del Software */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.3rem;
+  color: var(--color-primary);
+  margin: 0.4rem 0;
+}
+
+.section-desc {
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: var(--color-bg-light);
+  padding: 2.2rem 1.8rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(45, 74, 62, 0.18);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  background-color: var(--color-terracotta-light);
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* Franja 2: Personas detrás del proyecto (Equipo) */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: var(--color-bg-light);
+  padding: 2rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 1px solid rgba(45, 74, 62, 0.08); /* Borde sutil para potenciar el recorte */
+  box-shadow: var(--card-shadow);            /* Sombra destacada sobre fondo blanco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(45, 74, 62, 0.20); /* Mayor elevación en hover */
+}
+
+.avatar-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-terracotta);
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.team-card .role {
+  font-size: 0.82rem;
+  color: var(--color-terracotta);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.team-card p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Badges de Tecnologías */
+.tech-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-badges span {
+  background-color: var(--color-terracotta-light);
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Enlaces de Redes Sociales (GitHub e Instagram) */
+.social-links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.social-links a.instagram {
+  background-color: #c13584;
+}
+
+.social-links a:hover {
+  opacity: 0.9;
+}
+
+/* Franja 3: Resumen general */
+.quote-box {
+  padding: 1rem 0;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: var(--color-terracotta);
+  margin-bottom: 1rem;
+}
+
+.stripe-dark h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* Footer institucional */
+footer {
+  background-color: #21352c;
+  color: #ffffff;
+  padding: 2rem 8%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.institution-link {
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.institution-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.institution-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.institution-logo img {
+  height: 35px;
+  object-fit: contain;
+  background: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .content-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-side h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 3.5rem 5%;
+  }
+
+  .stripe-dark h2 {
+    font-size: 1.6rem;
+  }
+}

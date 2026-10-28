@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesis Vivero - Jardín Secreto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Iconos de FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Encabezado / Navbar (Diferenciado visualmente de los apartados) -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-seedling"></i>
+      <span>Tesis Vivero — Jardín Secreto</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#nuestro-equipo">Nuestro equipo</a>
+      <a href="#sistema">El Sistema</a>
+      <a href="#personas">Desarrolladores</a>
+      <a href="#resumen">Propósito</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Apartado 1: Nuestro equipo / Conócenos -->
+    <section id="nuestro-equipo" class="section stripe-light">
+      <div class="container content-grid">
+        <div class="text-side">
+          <span class="sub-tag"><i class="fa-solid fa-leaf"></i> PROYECTO INSTITUCIONAL DE TESIS</span>
+          <h1>Conócenos</h1>
+          <p>
+            Somos un grupo de estudiantes del <strong>Instituto Superior A. U. Illia</strong> que desarrolló esta tesis con el objetivo de aportar una solución tecnológica integral para la gestión y optimización del vivero <strong>Jardín Secreto</strong>.
+          </p>
+          
+          <!-- Mención cariñoscia a la profesora Agustina Aperlo con su link de GitHub -->
+          <div class="prof-box">
+            <i class="fa-solid fa-heart" style="color: var(--color-terracotta);"></i> 
+            Un agradecimiento especial a nuestra querida profe 
+            <a href="https://github.com/magustinaperlo" target="_blank">Agustina Aperlo</a> 
+            por acompañarnos, guiarnos y bancarnos en todo este recorrido académico. ¡Gracias por tanto! ❤️
+          </div>
+        </div>
+        <div class="image-side">
+          <img
+            src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+            alt="Vivero y plantas"
+            class="feature-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Impacto y Beneficios del Software -->
+    <section id="sistema" class="section stripe-accent">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-tag"><i class="fa-solid fa-cogs"></i> SOLUCIÓN TECNOLÓGICA</span>
+          <h2>¿Qué resuelve nuestro software?</h2>
+          <p class="section-desc">
+            Un sistema a medida diseñado para automatizar las tareas cotidianas del negocio y fidelizar a sus clientes.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3>Control de Stock</h3>
+            <p>Gestión automatizada del inventario de plantas e insumos en tiempo real para evitar quiebres de stock.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-cash-register"></i></div>
+            <h3>Ventas Ágiles</h3>
+            <p>Registro rápido de transacciones comerciales de manera interna y segura (sin pasarelas de pago complejas).</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-ranking-star"></i></div>
+            <h3>Puntos y Recompensas</h3>
+            <p>Control de clientes frecuentes mediante un sistema de acumulación de puntos para canje de beneficios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartado 2: Personas detrás del proyecto -->
+    <section id="personas" class="section stripe-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-tag"><i class="fa-solid fa-users"></i> UN EQUIPO, UN MISMO PROPÓSITO</span>
+          <h2>Personas detrás del proyecto</h2>
+          <p class="section-desc">
+            Cada miembro aportó conocimientos, habilidades y pasión técnica para hacer posible esta tesis.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Santiago Soria -->
+          <div class="team-card">
+            <div class="avatar-wrapper">
+              <img src="img/santy.jpeg" alt="Santiago Soria" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'" />
+            </div>
+            <h3>Santiago Soria</h3>
+            <span class="role">Desarrollador</span>
+            <p>Encargado del ABM (Alta - Baja - Modificacion) de la pestaña "Clientes" y de la Base de Datos.</p>
+            <div class="tech-badges">
+              <span>SQL</span>
+              <span>Java</span>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/agustinsantiagosoria-bit" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
+              <a href="https://www.instagram.com/santi.s.08/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> IG</a>
+            </div>
+          </div>
+
+          <!-- Macarena Bazán -->
+          <div class="team-card">
+            <div class="avatar-wrapper">
+              <img src="img/maca.jpeg" alt="Macarena Bazán" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80'" />
+            </div>
+            <h3>Macarena Bazán</h3>
+            <span class="role">Desarrolladora</span>
+            <p>Encargado del ABM (Alta - Baja - Modificacion) de la pestaña "Historial de Ventas".</p>
+            <div class="tech-badges">
+              <span>Java</span>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/maquitabazan-bit" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
+              <a href="https://www.instagram.com/maquita.bazan/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> IG</a>
+            </div>
+          </div>
+
+          <!-- Jonathan Portela -->
+          <div class="team-card">
+            <div class="avatar-wrapper">
+              <img src="img/jony.jpeg" alt="Jonathan Portela" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80'" />
+            </div>
+            <h3>Jonathan Portela</h3>
+            <span class="role">Desarrollador</span>
+            <p>Encargado del ABM (Alta - Baja - Modificacion) de la pestaña "Productos" y de la Base de Datos.</p>
+            <div class="tech-badges">
+              <span>Java</span>
+              <span>SQL</span>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/JonathanPortela" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
+              <a href="https://www.instagram.com/_jonathan.gv/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> IG</a>
+            </div>
+          </div>
+
+          <!-- Nahir Campos -->
+          <div class="team-card">
+            <div class="avatar-wrapper">
+              <img src="img/nay.jpeg" alt="Nahir Campos" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80'" />
+            </div>
+            <h3>Nahir Campos</h3>
+            <span class="role">Desarrolladora</span>
+            <p>Encargado del ABM (Alta - Baja - Modificacion) de la pestaña "Categorias" y realizar el QA.</p>
+            <div class="tech-badges">
+              <span>Java</span>
+              <span>QA</span>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/NahirLecams" target="_blank"><i class="fa-brands fa-github"></i> GH</a>
+              <a href="https://www.instagram.com/_denayth/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> IG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartado 3: Resumen general -->
+    <section id="resumen" class="section stripe-dark">
+      <div class="container text-center">
+        <div class="quote-box">
+          <i class="fa-solid fa-seedling quote-icon"></i>
+          <h2>Tecnología al servicio de la naturaleza</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página institucional (Con enlace al ISAUI) -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Tesis Vivero - Todos los derechos reservados.</p>
+      
+      <a href="https://isaui.edu.ar/" target="_blank" class="institution-link">
+        <div class="institution-logo">
+          <img src="img/isaui.jpeg" alt="Instituto Superior A. U. Illia" onerror="this.style.display='none'" />
+          <span>Instituto Superior A. U. Illia — Tecnicatura Superior en Desarrollo de Software</span>
+        </div>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
