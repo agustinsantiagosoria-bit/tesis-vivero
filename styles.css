@@ -5,7 +5,6 @@
   --color-bg-light: #ffffff;      
   --color-text: #2c2c2c;
   --color-muted: #666666;
-  /* Sombra refinada y más definida para resaltar sobre fondos blancos */
   --card-shadow: 0 8px 24px rgba(45, 74, 62, 0.12);
   --border-radius: 14px;
 }
@@ -27,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Encabezado / Navbar diferenciado de los apartados */
+/* Encabezado / Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,13 +46,22 @@ body {
   align-items: center;
   gap: 12px;
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: #ffffff;
 }
 
 .logo i {
   color: var(--color-terracotta);
+  font-size: 1.4rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -243,8 +251,8 @@ body {
   padding: 2rem 1.5rem;
   border-radius: var(--border-radius);
   text-align: center;
-  border: 1px solid rgba(45, 74, 62, 0.08); /* Borde sutil para potenciar el recorte */
-  box-shadow: var(--card-shadow);            /* Sombra destacada sobre fondo blanco */
+  border: 1px solid rgba(45, 74, 62, 0.08);
+  box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +261,7 @@ body {
 
 .team-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 32px rgba(45, 74, 62, 0.20); /* Mayor elevación en hover */
+  box-shadow: 0 14px 32px rgba(45, 74, 62, 0.20);
 }
 
 .avatar-wrapper {
@@ -292,7 +300,6 @@ body {
   flex-grow: 1;
 }
 
-/* Badges de Tecnologías */
 .tech-badges {
   display: flex;
   gap: 6px;
@@ -310,7 +317,6 @@ body {
   border-radius: 6px;
 }
 
-/* Enlaces de Redes Sociales (GitHub e Instagram) */
 .social-links {
   display: flex;
   gap: 8px;
@@ -400,12 +406,34 @@ footer {
   border-radius: 4px;
 }
 
-/* Responsive */
+/* Adaptabilidad para Teléfonos (Menú Desplegable Hamburguesa) */
 @media (max-width: 768px) {
-  .navbar {
+  .menu-toggle {
+    display: block !important; /* Muestra el botón de tres líneas en móviles */
+  }
+
+  .nav-links {
+    display: none !important; /* Oculta los enlaces por defecto en celulares */
     flex-direction: column;
-    gap: 0.8rem;
-    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 1.5rem 0;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    border-bottom: 3px solid var(--color-terracotta);
+    text-align: center;
+  }
+
+  /* Clase que activa el menú desplegable al hacer clic */
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links a {
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
   }
 
   .content-grid {
